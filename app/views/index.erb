@@ -1,0 +1,23 @@
+<div class="container">
+  <!-- <div id='grandma'> -->
+    <!-- <% if @grandma %> -->
+    <!-- <% else %> -->
+    <!-- <% end %> -->
+
+  <p id='default'>Type a message to Grandma!</p>
+  <p id='return_prefix' style='display: none'>Grandma says:</p>
+  <p id='grandma'><%= @grandma %></p>
+  <!-- </div> -->
+
+
+  <form name='cool_form'
+    action='/grandma'
+    method='POST'>
+    
+    <input type="hidden" name="_method" value="POST">
+
+    <input type='text' name='user_input'>
+    <input type='submit' value='Submit'>
+  </form>
+
+</div>
